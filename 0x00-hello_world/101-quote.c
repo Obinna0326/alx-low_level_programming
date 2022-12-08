@@ -1,4 +1,6 @@
 #include <stdio>
+#include <unistd.h>
+
 /**
  *
  * main - Main Function to write a quote
