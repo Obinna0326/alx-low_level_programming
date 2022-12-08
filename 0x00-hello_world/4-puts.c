@@ -1,12 +1,12 @@
-#include <studio.h>
-/** 
- * main - Main entry prints hello,world
+#include <stdio.h>
+/**
+ * main - Main entry 
  *
- * Return: Always 0 (success)
+ * Return: return 0 (success)
  */
 
-int main(void)
+int main(void);
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("Programming is like building a multilingual puzzle\n");
 	return (0);
 }
