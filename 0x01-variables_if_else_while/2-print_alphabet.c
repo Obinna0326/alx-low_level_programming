@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - The entry of the program 
+ * main - Entry of the program
  *
  * Return:Return 0 (success)
  */
@@ -15,5 +15,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-
