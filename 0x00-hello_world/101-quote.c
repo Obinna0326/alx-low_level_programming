@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>                                                                     /** 
- * main - Prints "and that piece of art is useful"
- * Return: Always
+ * main - Entry point
+ * Return: Always 1
 */
 int main(void)
 {
