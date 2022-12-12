@@ -18,6 +18,34 @@ int main(void)
 		{
 			for (c = 0; c < 10; c++)
 		{
-				if (a == b);
-				testing commit
-					new line
+				if (a == b)
+			{
+					continue;
+			}
+
+					if (a > b)
+			{
+					continue;
+			}
+					if (a > c)
+					continue;
+					if (b > c)
+					continue;
+					if (b == c)
+					continue;
+					putchar((a % 10) + '0');
+					putchar((b % 10) + '0');
+					putchar((c % 10) + '0');
+					if (a == 7 && b == 8 && c == 9)
+			{
+					continue;
+			}
+					putchar(',');
+					putchar(' ');
+		}
+		}
+	}
+	putchar('\n');
+
+	return (0);
+}
