@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * Print_to _98 -  prints all natural numbers from n to 98 with a new line
+ * Print_to _98 - prints all natural numbers from
+ * n to 98 with a new line
  * @n: input Number
  * Return: 0
  */
