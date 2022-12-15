@@ -2,8 +2,9 @@
 /**
  * print_most_numbers - prints numbers from 0 to 9
  * Description: prints the numbers
- * Return: Always 0
+ * Return: 0
  */
+
 void print_most_numbers(void)
 {
 	int a = 0;
@@ -13,7 +14,7 @@ void print_most_numbers(void)
 	}
 	_putchar(a + '0');
 	{
-		a++;
+	a++;
 	}
 	_putchar('\n');
 }
