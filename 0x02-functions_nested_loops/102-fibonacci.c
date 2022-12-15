@@ -25,5 +25,6 @@ int main(void)
 			b = c;
 			c = next;
 		}
+
 		return (0);
 }
