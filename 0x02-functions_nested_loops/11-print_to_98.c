@@ -2,6 +2,7 @@
 /**
  * Print_to _98 - prints all natural numbers from
  * n to 98 with a new line
+ * Description: prints all natural number from n - 98
  * @n: input Number
  * Return: 0
  */
