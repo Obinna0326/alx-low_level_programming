@@ -17,14 +17,15 @@ int main(void)
 		if (b != 20365011074)
 		{
 			printf("%ld, ", b);
-		} else
+		}
+	       	else
 		{
 			printf("%ld\n", b);
-		{
+		}
 			next = b + c;
 			b = c;
 			c = next;
-		}
+	}
 
 		return (0);
 }
