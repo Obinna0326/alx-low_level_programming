@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- *mul - Entry point of the program
- *@a: carrier integer variable
- *@b: carrier integer variable
+ *mul - multiplies two integers
+ *@a: int to be multiplied to b
+ *@b: int to be multiplied to a
  *Return: result of the operation
  */
 int mul(int a, int b);
