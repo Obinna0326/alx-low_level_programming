@@ -1,48 +1,44 @@
 #include "main.h"
-/**
- * _strlen - finds the length of string
- *
- * @s: string
- * Return: string length
- */
-int _strlen(char *s)
-{
-	int i = 0;
 
-	while (s[i] != '\0')
-	{
-		s++;
-		i++;
-	}
-	return (i);
-}
 /**
- * _strspn - finds the length of a substring
- *
- * @s: substring
- * @accept: string
- * Return: integer
- */
+ * _strspn - Locates a character in a string
+ * @s: This is the main C string to be scanned.
+ * @accept: This is the string containing the list of characters to match in s
+ * Return: return count
+ **/
+
 unsigned int _strspn(char *s, char *accept)
+
 {
 	int i, j;
-	unsigned int n = 0;
-	unsigned int *p = &n;
+	int count = 0;
+	char *str1, *str2;
 
-	for (i = 0; i < _strlen(s); i++)
+	str1 = s;
+	str2 = accept;
+
+	i = 0;
+	while (str1[i] != '\0')
 	{
-		if (s[i] != ' ')
+		j = 0;
+		while (str2[j] != '\0')
 		{
-			for (j = 0; j < _strlen(accept); j++)
+			if (str2[j] == str1[i])
 			{
-				if (s[i] != accept[j])
-				{
-					break;
-				}
-				else
-					*p++;
+				count++;
+				break;
 			}
+
+			j++;
 		}
+
+		if (s[i] != accept[j])
+		{
+			break;
+		}
+
+		i++;
 	}
-	return (n);
+
+	return (count);
 }
