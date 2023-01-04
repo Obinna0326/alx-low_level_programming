@@ -1,44 +1,33 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * _strspn - Locates a character in a string
- * @s: This is the main C string to be scanned.
- * @accept: This is the string containing the list of characters to match in s
- * Return: return count
- **/
-
+ * _strspn - Gets the length of a prefix substring.
+ * @s: The string to be searched.
+ * @accept: The prefix to be measured.
+ *
+ * Return: The number of bytes in s which
+ * consist only of bytes from accept.
+ */
 unsigned int _strspn(char *s, char *accept)
-
 {
-	int i, j;
-	int count = 0;
-	char *str1, *str2;
+	unsigned int bytes = 0;
+	int index;
 
-	str1 = s;
-	str2 = accept;
-
-	i = 0;
-	while (str1[i] != '\0')
+	while (*s)
 	{
-		j = 0;
-		while (str2[j] != '\0')
+		for (index = 0; accept[index]; index++)
 		{
-			if (str2[j] == str1[i])
+			if (*s == accept[index])
 			{
-				count++;
+				bytes++;
 				break;
 			}
 
-			j++;
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
 
-		if (s[i] != accept[j])
-		{
-			break;
-		}
-
-		i++;
+		s++;
 	}
 
-	return (count);
+	return (bytes);
 }
